@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>KEYREST – FINAL ULTRA CHAD MODE ACTIVATED 😈</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      background: #000;
+      color: #ff0044;
+      font-family: 'Courier New', monospace;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .container {
+      text-align: center;
+      padding: 100px;
+      max-width: 1200px;
+    }
+    h1 {
+      font-size: 9rem;
+      margin: 0 0 60px;
+      text-shadow: 0 0 100px #ff0044;
+      letter-spacing: -20px;
+      animation: glitch 1.2s infinite;
+    }
+    .final-msg {
+      font-size: 4.5rem;
+      font-weight: bold;
+      margin: 80px 0 40px;
+      background: linear-gradient(90deg, #ff0044, #00ff41, #0044ff, #ff0044);
+      background-size: 400% 400%;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: rgbFlow 6s ease infinite;
+      text-shadow: 0 0 30px rgba(255,255,255,0.3);
+      user-select: text;
+      cursor: text;
+    }
+    .copy-box {
+      background: rgba(10,10,10,0.8);
+      border: 3px solid #ff0044;
+      border-radius: 20px;
+      padding: 40px;
+      max-width: 900px;
+      margin: 0 auto;
+      font-size: 2.8rem;
+      color: #00ff41;
+      text-align: center;
+      box-shadow: 0 0 80px rgba(0,255,65,0.4);
+      user-select: text;
+    }
+    .copy-instruction {
+      font-size: 2rem;
+      color: #ff88aa;
+      margin-top: 30px;
+    }
+    .emoji-big {
+      font-size: 10rem;
+      margin: 50px 0;
+      animation: bounce 2s infinite;
+    }
+
+    @keyframes glitch {
+      0% { text-shadow: 10px 0 #f00, -10px 0 #0ff; transform: skew(3deg); }
+      20% { text-shadow: -10px 0 #f00, 10px 0 #0ff; transform: skew(-3deg); }
+      40% { text-shadow: 0 0 #f00; transform: skew(0); }
+      100% { text-shadow: 10px 0 #f00, -10px 0 #0ff; }
+    }
+    @keyframes rgbFlow {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+    @keyframes bounce {
+      0%,100% { transform: translateY(0); }
+      50% { transform: translateY(-30px); }
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <div class="emoji-big">😈🔥💀</div>
+  <h1>TODO COMPLETADO</h1>
+  
+  <div class="final-msg">TE LA CREÍSTE BROOOOOO</div>
+
+  <div class="copy-box" onclick="navigator.clipboard.writeText('TE LA CREÍSTE BROOOOOO')">
+    TE LA CREÍSTE BROOOOOO
+  </div>
+
+  <div class="copy-instruction">
+    Click en el texto RGB para copiarlo al portapapeles 😏<br>
+    Pégalo donde quieras y haz sufrir a tus compas 🔥
+  </div>
+</div>
+
+<script>
+// Efecto extra: cambia el color del texto cada rato pa más RGB vibe
+setInterval(() => {
+  document.querySelector('.final-msg').style.animationDuration = 
+    (Math.random() * 3 + 3) + 's';
+}, 8000);
+</script>
+</body>
+</html>
